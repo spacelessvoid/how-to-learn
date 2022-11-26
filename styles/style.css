@@ -5,12 +5,6 @@
   --clr-black: #000;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -205,6 +199,7 @@
 }
 
 .feynman {
+  box-sizing: border-box;
   background-image: url(../images/feynman.png);
   background-position: bottom left;
   background-size: 867px 637px;
@@ -259,6 +254,7 @@
 }
 
 .footer {
+  box-sizing: border-box;
   display: flex;
   background-color: var(--clr-dark-gray);
   color: var(--clr-light-gray);
