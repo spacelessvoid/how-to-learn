@@ -1,3 +1,16 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
 :root {
   --clr-dark-gray: #1f1f1f;
   --clr-light-gray: #f2f2f2;
@@ -38,6 +51,32 @@
   background-image: url(../images/logo_place_footer.svg);
 }
 
+.section-title {
+  margin: 0 auto 20px;
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-title_theme_dark {
+  color: var(--clr-light-gray);
+}
+
+.section-subtitle {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.section-subtitle_theme_dark {
+  color: var(--clr-light-gray);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -46,6 +85,7 @@
   max-height: 756px;
   position: relative;
   background-color: var(--clr-light-gray);
+  overflow: hidden;
 }
 
 .header__title {
@@ -129,34 +169,44 @@
   font-weight: 600;
 }
 
+.techniques {
+  margin: 100px 0;
+}
+
+.cards {
+}
+.cards__item {
+}
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.cards__title {
+}
+.cards__description {
+}
+
+.video {
+  margin-bottom: -60px;
+}
+
+.video__iframes {
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.video__iframe:first-of-type {
+  margin-right: 20px;
+}
+
+.oakley {
+  padding-top: 160px;
+  background-color: var(--clr-light-gray);
+}
+
 .digits {
   margin: 100px auto;
-}
-
-.section-title {
-  margin: 0 auto 20px;
-  width: 60%;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-}
-
-.section-title_theme_dark {
-  color: var(--clr-light-gray);
-}
-
-.section-subtitle {
-  margin: 0 auto;
-  width: 60%;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.section-subtitle_theme_dark {
-  color: var(--clr-light-gray);
 }
 
 .table {
@@ -236,6 +286,27 @@
   font-weight: normal;
 }
 
+.khan {
+}
+.khan__container {
+}
+.khan__author {
+}
+.khan__title {
+}
+.khan__quote {
+}
+.khan__quote-author {
+}
+.khan__quote-author-subline {
+}
+.khan__book-container {
+}
+.khan__book-pic {
+}
+.khan__buy-link {
+}
+
 .kaufman {
   background-color: var(--clr-dark-gray);
   padding: 90px 0;
@@ -251,6 +322,19 @@
   position: absolute;
   top: 0;
   right: -210px;
+}
+
+.resources {
+}
+.section-title {
+}
+.section-subtitle {
+}
+.resources__logo-zone {
+}
+.resources__link {
+}
+.resources__logo {
 }
 
 .footer {
