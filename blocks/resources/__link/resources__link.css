@@ -1,0 +1,4 @@
+.resources__link:hover {
+  opacity: .69;
+  transition: opacity .42s linear;
+}
